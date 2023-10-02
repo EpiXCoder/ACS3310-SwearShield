@@ -1,10 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const index_1 = require("../dist/index");
+const { SwearShield } = require('../src/index');
+
 describe('SwearShield TypeScript Tests', () => {
     let filter;
+
     beforeEach(() => {
-        filter = new index_1.default();
+        filter = new SwearShield;
     });
     test('should detect profane words', () => {
         expect(filter.isProfane('boob')).toBe(true);

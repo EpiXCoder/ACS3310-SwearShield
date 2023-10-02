@@ -51,4 +51,4 @@ class SwearShield {
     }
 }
 
-export default SwearShield;
+export { SwearShield };
