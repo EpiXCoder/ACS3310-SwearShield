@@ -1,6 +1,7 @@
 # Swear Shield
 ![version](https://img.shields.io/npm/v/swear-shield.svg)
 ![downloads](https://img.shields.io/npm/dm/swear-shield.svg)
+![CI/CD](https://github.com/EpiXCoder/ACS3310-SwearShield/actions/workflows/node.js.yml/badge.svg)
 
 In the era of social media, trolls and negativity can often overshadow the benefits of open communication. Harsh words or profanity can turn any constructive conversation into a hostile environment. This is where our Swear Shield Node.js module comes in handy. Designed to sanitize user-generated content, it helps to maintain the quality and decency of discussions by filtering out offensive words.
 

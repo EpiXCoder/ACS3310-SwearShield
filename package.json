@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "author": "Vithusha Ravirajan <vithusha.ravirajan@gmail.com> (http://www.github.com/EpiXCoder)",
   "license": "ISC",

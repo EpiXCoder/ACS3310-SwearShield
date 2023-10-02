@@ -3,10 +3,13 @@
       "target": "ES2015",
       "module": "CommonJS",
       "outDir": "./dist",
-      "rootDir": "./src",
       "strict": true,
       "resolveJsonModule": true,
-      "moduleResolution": "node"
+      "moduleResolution": "node",
+      "noImplicitAny": false,
+      "noEmitOnError": true,
+      "removeComments": false,
+      "sourceMap": true,
   
     },
     // "include": ["src/*.ts"],
