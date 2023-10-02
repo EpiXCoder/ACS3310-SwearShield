@@ -1,11 +1,10 @@
 {
   "name": "swear-shield",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "Vithusha Ravirajan <vithusha.ravirajan@gmail.com> (http://www.github.com/EpiXCoder)",
   "license": "ISC",
@@ -23,7 +22,10 @@
   "devDependencies": {
     "@types/jest": "^29.5.5",
     "jest": "^29.7.0",
+    "json-loader": "^0.5.7",
     "ts-jest": "^29.1.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }

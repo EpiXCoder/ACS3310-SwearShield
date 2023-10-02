@@ -52,9 +52,3 @@ class SwearShield {
 }
 
 export default SwearShield;
-
-const filter = new SwearShield("*")
-const string = 'The man looked at his enemy and said "go fuck yourself you jizz head"'
-filter.addWords('lakkalakka')
-console.log(filter.isProfane(string))
-console.log(filter.sanitize(string))
