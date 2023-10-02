@@ -22,7 +22,7 @@ npm install swear-shield
 
 ### Basic Usage with Default Profanity List:
 ```javascript
-const SwearShield = require('swear-shield');
+const { SwearShield } = require('swear-shield');
 const filter = new SwearShield();
 
 const userInput = "This is a test sentence with badword.";
