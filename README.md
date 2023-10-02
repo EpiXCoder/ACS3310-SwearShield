@@ -13,8 +13,43 @@ Remember, the exact wording can be adjusted based on your understanding of the m
 [NPM package available here.](https://www.npmjs.com/package/swear-shield)
 
 ## Installation
+```javascript
 npm install swear-shield
+```
 
 ## Usage
 
+### Basic Usage with Default Profanity List:
+```javascript
+const SwearShield = require('swear-shield');
+const filter = new SwearShield();
 
+const userInput = "This is a test sentence with badword.";
+console.log(filter.sanitize(userInput)); // "This is a test sentence with *******."
+```
+
+### Using Custom Profanity List:
+```javascript
+const customList = ["customword1", "customword2"];
+const filter = new SwearShield('*', customList);
+
+const userInput = "This sentence has customword1 in it.";
+console.log(filter.sanitize(userInput)); // "This sentence has ********** in it."
+
+```
+
+### Excluding Specific Words from Being Filtered:
+```javascript
+filter.removeWords("customword1");
+const userInput = "This sentence has customword1 in it.";
+console.log(filter.sanitize(userInput)); // The output remains unchanged
+
+```
+
+### Adding New Words to the Filter:
+```javascript
+filter.addWords("newbadword");
+const userInput = "Here is another sentence with newbadword.";
+console.log(filter.sanitize(userInput)); // "Here is another sentence with *********."
+
+```
