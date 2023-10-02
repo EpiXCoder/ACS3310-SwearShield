@@ -1,7 +1,7 @@
-const { SwearShield } = require('../src/index');
+import { SwearShield } from '../src/index';
 
 describe('SwearShield TypeScript Tests', () => {
-    let filter: typeof SwearShield;
+    let filter: SwearShield;
 
     beforeEach(() => {
         filter = new SwearShield();

@@ -1,6 +1,6 @@
 import { words as defaultList } from './banList.json';
 
-class SwearShield {
+export class SwearShield {
     private placeHolder: string;
     private optionalList: string[];
     private list: Set<string>;
@@ -50,5 +50,3 @@ class SwearShield {
         words.forEach(word => this.excludeList.add(word.toLowerCase()));
     }
 }
-
-export { SwearShield };
